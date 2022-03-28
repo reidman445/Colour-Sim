@@ -20,31 +20,93 @@ public class MaterialChanger : MonoBehaviour
 
         if (other.gameObject.CompareTag("Red"))
         {
-            //Player is Red + Object is Blue = Purple
-            if (myMaterial.color == Color.blue)
+
+            if (myMaterial.color == Color.blue || myMaterial.color == Color.yellow)
             {
-                //Changes to purple - Last int is alpha always leave 255
-                myMaterial.color = new Color32(128, 0, 128, 255);
+
+
+                //Player is Red + Object is Blue = Purple
+                if (myMaterial.color == Color.blue)
+                {
+                    //Changes to purple - Last int is alpha always leave 255
+                    myMaterial.color = new Color32(128, 0, 128, 255);
+                }
+                //Player is Red + Object is Yellow = ORANGE
+                if (myMaterial.color == Color.yellow)
+                {
+                    //Changes to ORANGE - Last int is alpha always leave 255
+                    myMaterial.color = new Color32(255, 165, 0, 255);
+                }
             }
             else
             {
                 myMaterial.color = Color.red;
             }
+            
+               
+            
         }
 
         if (other.gameObject.CompareTag("Blue"))
         {
-            //Player is Blue + Object is Red = Purple
-            if (myMaterial.color == Color.red)
+
+            if (myMaterial.color == Color.red || myMaterial.color == Color.yellow)
             {
-               //Changes to purple - Last int is alpha always leave 255
-                myMaterial.color = new Color32(128, 0, 128, 255);
+
+                //Player is Blue + Object is Red = Purple
+                if (myMaterial.color == Color.red)
+                {
+                    //Changes to purple - Last int is alpha always leave 255
+                    myMaterial.color = new Color32(128, 0, 128, 255);
+                }
+                //Player is BLUE + Object is YELLOW = GREEN
+                if (myMaterial.color == Color.yellow)
+                {
+                    //Changes to GREEN - Last int is alpha always leave 255
+                    myMaterial.color = new Color32(0, 128, 0, 255);
+                }
+
             }
             else
             {
                 myMaterial.color = Color.blue;
             }
             
+                
+            
+            
+        }
+
+        if (other.gameObject.CompareTag("Yellow"))
+        {
+
+            if (myMaterial.color == Color.red || myMaterial.color == Color.blue)
+            {
+
+                //Player is Yellow + Object is Red = ORANGE
+                if (myMaterial.color == Color.red)
+                {
+                    //Changes to ORANGE - Last int is alpha always leave 255
+                    myMaterial.color = new Color32(255, 165, 0, 255);
+                }
+
+                //Player is Yellow + Object is Blue = GREEN
+                if (myMaterial.color == Color.blue)
+                {
+                    //Changes to GREEN - Last int is alpha always leave 255
+                    myMaterial.color = new Color32(0, 128, 0, 255);
+                }
+
+            }
+            else
+            {
+                myMaterial.color = Color.yellow;
+            }
+
+           
+                
+           
+
         }
 
     }

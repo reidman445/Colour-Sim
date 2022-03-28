@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{302C2F19-B060-5B91-12AE-248FA46AB924}</ProjectGuid>
+    <ProjectGuid>{7AFCA30F-F712-03B3-3285-52A038FF8916}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -53,55 +53,55 @@
     <UnityVersion>2020.3.23f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Easy Character Movement\Scripts\@Obsolete\RaycastGroundDetection.cs" />
-    <Compile Include="Assets\Easy Character Movement\Scripts\Controllers\BaseCharacterController.cs" />
-    <Compile Include="Assets\Easy Character Movement\Examples\Scripts\Controllers\CustomAgentController.cs" />
-    <Compile Include="Assets\Easy Character Movement\Examples\Scripts\Components\KinematicRotate.cs" />
+    <Compile Include="Assets\Easy Character Movement\Examples\Scripts\Controllers\CharacterController2D.cs" />
+    <Compile Include="Assets\Easy Character Movement\Examples\Scripts\Components\CrouchingModelScaler.cs" />
+    <Compile Include="Assets\Easy Character Movement\Walkthrough\11 - Flying\Scripts\MyCharacterController.cs" />
+    <Compile Include="Assets\Easy Character Movement\Examples\Scripts\Common\Utils.cs" />
+    <Compile Include="Assets\Easy Character Movement\Scripts\@Obsolete\BoxGroundDetection.cs" />
+    <Compile Include="Assets\Easy Character Movement\Examples\Scripts\Components\KinematicMove.cs" />
+    <Compile Include="Assets\Easy Character Movement\Scripts\Controllers\BaseFirstPersonController.cs" />
     <Compile Include="Assets\Easy Character Movement\Walkthrough\8 - Orient Towards Ground Normals\Scripts\MyCharacterController.cs" />
     <Compile Include="Assets\Easy Character Movement\Scripts\@Obsolete\OrientModelToGround.cs" />
-    <Compile Include="Assets\Easy Character Movement\Walkthrough\13 - Over The Shoulder Camera Movement\Scripts\MyCharacterController.cs" />
-    <Compile Include="Assets\Easy Character Movement\Scripts\Common\Extensions.cs" />
-    <Compile Include="Assets\Easy Character Movement\Examples\Scripts\Controllers\CharacterController2D.cs" />
     <Compile Include="Assets\Easy Character Movement\Scripts\Components\GroundDetection\BaseGroundDetection.cs" />
+    <Compile Include="Assets\Easy Character Movement\Examples\Scripts\Controllers\CustomCharacterController.cs" />
+    <Compile Include="Assets\Scenes\PlayerColourChanger.cs" />
+    <Compile Include="Assets\Easy Character Movement\Walkthrough\14 - Visualize walkable ground\Scripts\MeshAnalysis.cs" />
+    <Compile Include="Assets\Easy Character Movement\Scripts\Components\GroundDetection\GroundHit.cs" />
+    <Compile Include="Assets\Easy Character Movement\Walkthrough\10 - Wall Grab and Wall Jump\Scripts\MyCharacterController.cs" />
+    <Compile Include="Assets\Easy Character Movement\Walkthrough\5 - Crouching (FPS)\Scripts\MyCharacterController.cs" />
+    <Compile Include="Assets\Easy Character Movement\Scripts\Components\GroundDetection\GroundDetection.cs" />
+    <Compile Include="Assets\Easy Character Movement\Scripts\Controllers\BaseCharacterController.cs" />
+    <Compile Include="Assets\Easy Character Movement\Scripts\Components\CharacterMovement.cs" />
+    <Compile Include="Assets\Easy Character Movement\Scripts\Controllers\BaseAgentController.cs" />
+    <Compile Include="Assets\Easy Character Movement\Walkthrough\15 - Ladder Climbing\Scripts\Ladder.cs" />
+    <Compile Include="Assets\Easy Character Movement\Walkthrough\13 - Over The Shoulder Camera Movement\Scripts\MyCharacterController.cs" />
+    <Compile Include="Assets\Easy Character Movement\Examples\Scripts\Controllers\CustomAgentController.cs" />
+    <Compile Include="Assets\Easy Character Movement\Examples\Scripts\Components\KinematicRotate.cs" />
     <Compile Include="Assets\Easy Character Movement\Walkthrough\13 - Over The Shoulder Camera Movement\Scripts\OverShoulderCameraController.cs" />
-    <Compile Include="Assets\Easy Character Movement\Walkthrough\2 - Custom Input\Scripts\MyCharacterController.cs" />
+    <Compile Include="Assets\Easy Character Movement\Examples\Scripts\Controllers\EthanPlatformerController.cs" />
     <Compile Include="Assets\Easy Character Movement\Examples\Scripts\Controllers\FPS_CustomController.cs" />
     <Compile Include="Assets\Easy Character Movement\Examples\Scripts\Controllers\FollowCameraController.cs" />
-    <Compile Include="Assets\Easy Character Movement\Scripts\Helpers\RootMotionController.cs" />
-    <Compile Include="Assets\Easy Character Movement\Walkthrough\7 - Toggle Gravity Direction\Scripts\MyCharacterController.cs" />
-    <Compile Include="Assets\Easy Character Movement\Walkthrough\15 - Ladder Climbing\Scripts\MyCharacterController.cs" />
-    <Compile Include="Assets\Easy Character Movement\Walkthrough\5 - Crouching (FPS)\Scripts\MyCharacterController.cs" />
-    <Compile Include="Assets\Easy Character Movement\Walkthrough\3 - Movement Relative To Camera\Scripts\MyCharacterController.cs" />
-    <Compile Include="Assets\Easy Character Movement\Scripts\Components\CharacterMovement.cs" />
-    <Compile Include="Assets\Easy Character Movement\Examples\Scripts\Components\CrouchingModelScaler.cs" />
-    <Compile Include="Assets\Easy Character Movement\Scripts\Components\GroundDetection\GroundDetection.cs" />
     <Compile Include="Assets\Easy Character Movement\Walkthrough\10 - Wall Grab and Wall Jump\Scripts\OneWayPlatform.cs" />
-    <Compile Include="Assets\Easy Character Movement\Walkthrough\1 - Custom Character Controller\Scripts\MyCharacterController.cs" />
-    <Compile Include="Assets\Easy Character Movement\Scripts\Components\MouseLook.cs" />
-    <Compile Include="Assets\Easy Character Movement\Examples\Scripts\Controllers\CustomCharacterController.cs" />
-    <Compile Include="Assets\Easy Character Movement\Walkthrough\14 - Visualize walkable ground\Scripts\MeshAnalysis.cs" />
-    <Compile Include="Assets\Easy Character Movement\Walkthrough\11 - Flying\Scripts\MyCharacterController.cs" />
+    <Compile Include="Assets\Easy Character Movement\Scripts\Common\MathLibrary.cs" />
+    <Compile Include="Assets\Easy Character Movement\Walkthrough\13 - Over The Shoulder Camera Movement\Scripts\PreventCameraWallClip.cs" />
     <Compile Include="Assets\Easy Character Movement\Walkthrough\16 - Dash\Scripts\DashingCharacter.cs" />
     <Compile Include="Assets\Easy Character Movement\Examples\Scripts\Controllers\EthanCharacterController.cs" />
-    <Compile Include="Assets\Easy Character Movement\Scripts\Common\MathLibrary.cs" />
+    <Compile Include="Assets\Easy Character Movement\Walkthrough\2 - Custom Input\Scripts\MyCharacterController.cs" />
+    <Compile Include="Assets\Easy Character Movement\Walkthrough\7 - Toggle Gravity Direction\Scripts\MyCharacterController.cs" />
+    <Compile Include="Assets\Easy Character Movement\Walkthrough\1 - Custom Character Controller\Scripts\MyCharacterController.cs" />
     <Compile Include="Assets\Easy Character Movement\Walkthrough\12 - Swimming\Scripts\MyCharacterController.cs" />
-    <Compile Include="Assets\Easy Character Movement\Examples\Scripts\Common\Utils.cs" />
-    <Compile Include="Assets\Easy Character Movement\Scripts\Components\GroundDetection\GroundHit.cs" />
-    <Compile Include="Assets\Easy Character Movement\Walkthrough\6 - Fall Damage\Scripts\MyCharacterController.cs" />
-    <Compile Include="Assets\Easy Character Movement\Walkthrough\10 - Wall Grab and Wall Jump\Scripts\MyCharacterController.cs" />
-    <Compile Include="Assets\Easy Character Movement\Scripts\@Obsolete\BoxGroundDetection.cs" />
+    <Compile Include="Assets\Easy Character Movement\Scripts\@Obsolete\RaycastGroundDetection.cs" />
+    <Compile Include="Assets\Easy Character Movement\Scripts\Helpers\RootMotionController.cs" />
     <Compile Include="Assets\Easy Character Movement\Examples\Scripts\Controllers\EthanAgentController.cs" />
-    <Compile Include="Assets\Easy Character Movement\Examples\Scripts\Controllers\EthanPlatformerController.cs" />
-    <Compile Include="Assets\Easy Character Movement\Walkthrough\13 - Over The Shoulder Camera Movement\Scripts\PreventCameraWallClip.cs" />
-    <Compile Include="Assets\Easy Character Movement\Walkthrough\4 - Custom Rotation (tank like rotation)\Scripts\MyCharacterController.cs" />
-    <Compile Include="Assets\Easy Character Movement\Examples\Scripts\Components\KinematicMove.cs" />
-    <Compile Include="Assets\Easy Character Movement\Scripts\Controllers\BaseAgentController.cs" />
     <Compile Include="Assets\Easy Character Movement\Scripts\@Obsolete\SphereGroundDetection.cs" />
-    <Compile Include="Assets\Easy Character Movement\Walkthrough\15 - Ladder Climbing\Scripts\Ladder.cs" />
-    <Compile Include="Assets\Easy Character Movement\Scripts\Controllers\BaseFirstPersonController.cs" />
-    <Compile Include="Assets\Easy Character Movement\Examples\Scripts\Controllers\DemoController.cs" />
+    <Compile Include="Assets\Easy Character Movement\Walkthrough\3 - Movement Relative To Camera\Scripts\MyCharacterController.cs" />
+    <Compile Include="Assets\Easy Character Movement\Scripts\Components\MouseLook.cs" />
     <Compile Include="Assets\Scenes\MaterialChanger.cs" />
-    <Compile Include="Assets\Scenes\PlayerColourChanger.cs" />
+    <Compile Include="Assets\Easy Character Movement\Walkthrough\4 - Custom Rotation (tank like rotation)\Scripts\MyCharacterController.cs" />
+    <Compile Include="Assets\Easy Character Movement\Scripts\Common\Extensions.cs" />
+    <Compile Include="Assets\Easy Character Movement\Walkthrough\15 - Ladder Climbing\Scripts\MyCharacterController.cs" />
+    <Compile Include="Assets\Easy Character Movement\Walkthrough\6 - Fall Damage\Scripts\MyCharacterController.cs" />
+    <Compile Include="Assets\Easy Character Movement\Examples\Scripts\Controllers\DemoController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Easy Character Movement\README.txt" />

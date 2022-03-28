@@ -27,6 +27,12 @@ public class PlayerColourChanger : MonoBehaviour
             other.gameObject.tag = "Red";
         }
 
+        if (myMaterial.name == "Yellow")
+        {
+            playerMaterial.color = Color.yellow;
+            other.gameObject.tag = "Yellow";
+        }
+
     }
 
     //Cleanup
