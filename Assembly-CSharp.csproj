@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>8.0</LangVersion>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -64,7 +64,7 @@
     <Compile Include="Assets\Easy Character Movement\Scripts\@Obsolete\OrientModelToGround.cs" />
     <Compile Include="Assets\Easy Character Movement\Scripts\Components\GroundDetection\BaseGroundDetection.cs" />
     <Compile Include="Assets\Easy Character Movement\Examples\Scripts\Controllers\CustomCharacterController.cs" />
-    <Compile Include="Assets\Scenes\PlayerColourChanger.cs" />
+    <Compile Include="Assets\Scripts\PlayerColourChanger.cs" />
     <Compile Include="Assets\Easy Character Movement\Walkthrough\14 - Visualize walkable ground\Scripts\MeshAnalysis.cs" />
     <Compile Include="Assets\Easy Character Movement\Scripts\Components\GroundDetection\GroundHit.cs" />
     <Compile Include="Assets\Easy Character Movement\Walkthrough\10 - Wall Grab and Wall Jump\Scripts\MyCharacterController.cs" />
@@ -96,12 +96,16 @@
     <Compile Include="Assets\Easy Character Movement\Scripts\@Obsolete\SphereGroundDetection.cs" />
     <Compile Include="Assets\Easy Character Movement\Walkthrough\3 - Movement Relative To Camera\Scripts\MyCharacterController.cs" />
     <Compile Include="Assets\Easy Character Movement\Scripts\Components\MouseLook.cs" />
-    <Compile Include="Assets\Scenes\MaterialChanger.cs" />
+    <Compile Include="Assets\Scripts\MaterialChanger.cs" />
     <Compile Include="Assets\Easy Character Movement\Walkthrough\4 - Custom Rotation (tank like rotation)\Scripts\MyCharacterController.cs" />
     <Compile Include="Assets\Easy Character Movement\Scripts\Common\Extensions.cs" />
     <Compile Include="Assets\Easy Character Movement\Walkthrough\15 - Ladder Climbing\Scripts\MyCharacterController.cs" />
     <Compile Include="Assets\Easy Character Movement\Walkthrough\6 - Fall Damage\Scripts\MyCharacterController.cs" />
     <Compile Include="Assets\Easy Character Movement\Examples\Scripts\Controllers\DemoController.cs" />
+    <Compile Include="Assets\Scripts\Level1.cs" />
+    <Compile Include="Assets\Scripts\Level2.cs" />
+    <Compile Include="Assets\Scripts\Rainbow.cs" />
+    <Compile Include="Assets\Scripts\Level3.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Easy Character Movement\README.txt" />
